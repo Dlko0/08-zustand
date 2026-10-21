@@ -1,0 +1,54 @@
+.main {
+  width: min(100% - 2.5rem, 900px);
+  align-self: center;
+  flex: 1;
+  padding: 3.5rem 0;
+}
+
+.container {
+  border-top: 3px solid var(--accent);
+  background: var(--surface);
+}
+
+.item {
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.header h2 {
+  margin: 0 0 1.25rem;
+  font-size: 2rem;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+.tag {
+  display: inline-block;
+  margin: 0 0 1.25rem;
+  padding: 0.3rem 0.55rem;
+  background: #e5eee5;
+  color: var(--accent-strong);
+  font-family: Arial, sans-serif;
+  font-size: 0.78rem;
+}
+
+.content {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.date {
+  margin: 2rem 0 0;
+  color: var(--muted);
+  font-family: Arial, sans-serif;
+  font-size: 0.82rem;
+}
+
+.status {
+  width: min(100% - 2.5rem, 900px);
+  align-self: center;
+  flex: 1;
+  padding-top: 3rem;
+  color: var(--muted);
+}

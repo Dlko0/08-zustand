@@ -1,0 +1,47 @@
+:root {
+  color-scheme: light;
+  --ink: #20251f;
+  --muted: #70766e;
+  --paper: #f6f7f3;
+  --surface: #fff;
+  --line: #dfe3da;
+  --accent: #305d49;
+  --accent-strong: #204432;
+  --danger: #a6403e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-roboto), Arial, sans-serif;
+}
+
+body > div {
+  display: flex;
+  min-height: 100vh;
+  flex: 1;
+  flex-direction: column;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}

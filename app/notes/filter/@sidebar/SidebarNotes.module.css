@@ -1,0 +1,23 @@
+.menuList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menuLink {
+  display: block;
+  padding: 0.75rem 0.9rem;
+  border-radius: 4px;
+  color: var(--foreground);
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+}
+
+.menuLink:hover,
+.menuLink:focus-visible {
+  background: var(--surface);
+  color: var(--accent-strong);
+}

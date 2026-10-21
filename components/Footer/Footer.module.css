@@ -1,0 +1,45 @@
+.footer {
+  margin-top: auto;
+  border-top: 1px solid var(--line);
+  background: #edf0e9;
+  color: #51594f;
+  font-family: Arial, sans-serif;
+  font-size: 0.82rem;
+}
+
+.content {
+  display: flex;
+  width: min(100% - 2.5rem, 1120px);
+  min-height: 74px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.content p {
+  margin: 0;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.wrap a {
+  color: var(--accent-strong);
+}
+
+@media (max-width: 680px) {
+  .content,
+  .wrap {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .content {
+    justify-content: center;
+    padding: 1rem 0;
+  }
+}

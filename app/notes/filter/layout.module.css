@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex: 1;
+  width: min(100% - 2.5rem, 1280px);
+  align-self: center;
+  gap: 2rem;
+  padding: 2rem 0 3rem;
+}
+
+.sidebar {
+  flex: 0 0 200px;
+}
+
+.notesWrapper {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 720px) {
+  .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .sidebar {
+    flex-basis: auto;
+  }
+}

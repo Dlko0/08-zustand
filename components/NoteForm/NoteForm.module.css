@@ -1,0 +1,77 @@
+.form {
+  display: grid;
+  gap: 1.15rem;
+  padding: 1.5rem;
+  font-family: Arial, sans-serif;
+}
+
+.form label {
+  display: grid;
+  gap: 0.45rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.form input,
+.form textarea,
+.form select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #d9ded5;
+  border-radius: 4px;
+  background: #fff;
+  color: var(--ink);
+  font-weight: 400;
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.form input:focus,
+.form textarea:focus,
+.form select:focus {
+  border-color: var(--accent);
+  outline: 2px solid #b7c6a9;
+}
+
+.form [aria-invalid="true"] {
+  border-color: var(--danger);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.7rem;
+}
+
+.primaryButton,
+.secondaryButton {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.primaryButton {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+
+.secondaryButton {
+  background: #fff;
+  color: var(--ink);
+}
+
+.primaryButton:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+@media (max-width: 460px) {
+  .actions {
+    flex-direction: column-reverse;
+  }
+}

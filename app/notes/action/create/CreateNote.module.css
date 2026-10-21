@@ -1,0 +1,18 @@
+.main {
+  width: min(100% - 2.5rem, 720px);
+  align-self: center;
+  flex: 1;
+  padding: 3rem 0 4rem;
+}
+
+.container {
+  border-top: 3px solid var(--accent);
+  background: var(--surface);
+}
+
+.title {
+  margin: 0;
+  padding: 1.5rem 1.5rem 0;
+  font-size: 2rem;
+  font-weight: 500;
+}
